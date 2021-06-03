@@ -1,0 +1,138 @@
+.vertical-menu{
+    width: 250px;
+    background-color: rgb(240, 240, 240);
+    font-size: 20px;
+    height: 100%;
+} 
+
+.nav-item-info{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.nav-item-info:hover{
+    color: black;
+}
+
+.hidden{
+    display: none;
+}
+
+.flex-bottom {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.flex-content {
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+    margin: 0px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.no-select{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+table{
+    color: black;
+}
+
+.info-modal{
+    cursor: pointer;
+}
+
+.info-modal:hover{
+    color: cornflowerblue;
+    text-decoration: underline;
+}
+
+.i_modal{
+    display: none;
+    position: fixed;
+    z-index: 1050;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    outline: 0;
+}
+
+.i_modal_content{
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .3rem;
+    outline: 0;
+    width: 500px;
+    margin: 100px auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    align-items: center;
+    max-height: 70%;
+}
+
+.i_modal_content table{
+    margin: 30px;
+    color: black;
+}
+
+.r-only{
+    width: 300px;
+    color: black;
+    outline: none!important;
+    border: none!important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.r-only[disabled]{
+    background-color: #fff;
+}
+
+.sure_q{
+    color: black;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.sure_b{
+    font-size: xx-large;
+    margin-bottom: 40px;
+}
+
+.sure_b button{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.center{
+    text-align: center;
+}
+
+td button{
+    margin-top: 20px;
+}
+
+.n_{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input{
+    color: black!important;
+}

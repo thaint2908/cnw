@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Trang quản lý</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Unicat project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/styles/sp/sptemp.css">
+    <link rel="stylesheet" type="text/css" href="/plugins/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="/plugins/OwlCarousel2-2.2.1/animate.css">
+    <link rel="stylesheet" type="text/css" href="/styles/products.css">
+    <link rel="stylesheet" type="text/css" href="/styles/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="super_container">
+
+    <!-- Header -->
+
+    <header class="header">
+
+        <!-- Top Bar -->
+        <div class="top_bar">
+            <div class="top_bar_container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
+                                <ul class="top_bar_contact_list">
+                                    <li>
+                                        <a id="question" href="">Have any question ?</a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fa fa-phone" aria-hidden="true"></i>
+                                            <div>0987654321</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fa fa-envelope aria-hidden="true"></i>
+                                            <div>nhom22@gmail.com</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="top_bar_login ml-auto">
+                                    <div id="auth" class="login_button"><a href="/login">Login or Sign Up</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header Content -->
+        <div class="header_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="header_content d-flex flex-row align-items-center justify-content-start">
+                            <div class="logo_container">
+                                <a href="#">
+                                    <img src="assets/images/logo.jpg" alt="">
+                                </a>
+                            </div>
+                            <nav class="main_nav_contaner ml-auto">
+                                <ul class="main_nav">
+                                    <li><a href="/index">Home</a></li>
+                                    <li id="hidden_item"><a href="/products">Products</a></li>
+                                    <li id="hidden_item"><a href="/contact">Contact</a></li>
+                                    <li id="hidden_item" class="user_link"><a href="/user">User</a></li>
+                                    <li  class="active" class="dashboard"><a href="/admin">DashBoard</a></li>
+                                </ul>
+                                <div class="search_button"><i id="hidden_item" class="fa fa-search" aria-hidden="true"></i></div>
+
+                                <!-- Bonus tag -->
+
+                                <div class="shopping_cart">
+                                    <a href="/cart"><i id="hidden_item" class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="hamburger menu_mm">
+                                    <i class="fa fa-bars menu_mm" aria-hidden="true"></i>
+                                </div>
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header Search Panel -->
+        <div class="header_search_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="header_search_content d-flex flex-row align-items-center justify-content-end">
+                            <form action="#" class="header_search_form">
+                                <input type="search" class="search_input" placeholder="Search" required="required">
+                                <button class="header_search_button d-flex flex-column align-items-center justify-content-center">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Admin  -->
+
+    <div class="home">
+        <div class="breadcrumbs_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="breadcrumbs">
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><i class="fa fa-angle-right"></i></li>
+                                <li id="admin_bc">User</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+
+    <div class="flex-content">
+        <div class="flex-column">
+            <div class="d-flex flex-bottom p-3 bg-light vertical-menu">
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item nav-item-info">
+                        <div class="nav-link link-dark no-select" onclick="user_table()">Users</div>
+                    </li>
+                    <li class="nav-item nav-item-info">
+                        <div class="nav-link link-dark no-select" onclick="order_table()">Orders</div>
+                    </li>
+                    <li class="nav-item nav-item-info">
+                        <div class="nav-link link-dark no-select" onclick="product_table()">Products</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex-column w-100">
+            <div class="flex-bottom">
+
+                <div class="i_modal" id="d_modal">
+                    <div class="i_modal_content">
+                        <div class="sure_q center no-select">Are you sure?</div>
+                        <div class="sure_b center">
+                            <span>
+                                <button class="btn btn-outline-danger btn-lg" type="button" onclick="delete_yes()">Yes</button>
+                            </span>
+                            <span>
+                                <button class="btn btn-outline-success btn-lg" type="button" onclick="delete_no()">No</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User -->
+
+                <div class="table-responsive" id="user_t">
+                    <div class="i_modal" id="u_modal">
+                        <div class="i_modal_content">
+                            <table border="0">
+                                <tr>
+                                    <th>Họ</th>
+                                    <td>
+                                        <input type="text" class="form-control r-only" value="" disabled id="firstName">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Tên</th>
+                                    <td>
+                                        <input type="text" class="form-control r-only" value="" disabled id="lastName">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Ảnh đại diện</th>
+                                    <td>
+                                        <img class="form-control r-only" src="" id="image">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Số điện thoại</th>
+                                    <td>
+                                        <input type="text" class="form-control r-only" value="" disabled id="phoneNumber">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Email</th>
+                                    <td>
+                                        <input type="text" class="form-control r-only" value="" disabled id="email">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Ngày sinh</th>
+                                    <td>
+                                        <input type="date" class="form-control r-only" value="" disabled id="dateOfBirth">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Địa chỉ</th>
+                                    <td>
+                                        <input type="text" class="form-control r-only" value="" disabled id="address">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td>
+                                        <button type="button" class="btn btn-outline-danger" value="" onclick="delete_modal()" id="delete_user">Xóa người dùng</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <table class="table table-striped table-sm" id="userTable">
+                        <thead>
+                        <tr>
+                            <th class="hidden">Id</th>
+                            <th>#</th>
+                            <th>Họ</th>
+                            <th>Tên</th>
+                            <th>Chi tiết</th>
+                        </tr>
+                        </thead>
+                        <tbody id="user_tbody"></tbody>
+                    </table>
+                </div>
+
+                <!-- Order -->
+
+                <div class="table-responsive hidden" id="order_t">
+                    <div class="i_modal" id="o_modal">
+                        <div class="i_modal_content">
+                            <table border="0" id="variousOrder">
+                                <tr>
+                                    <th>Mã đơn hàng</th>
+                                    <td>
+                                        <input type="text" class="form-control r-only" value="" disabled id="orderId">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Tên người mua</th>
+                                    <td>
+                                        <input type="text" class="form-control r-only" value="" disabled id="buyerName">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Địa chỉ</th>
+                                    <td>
+                                        <input type="text" class="form-control r-only" value="" disabled id="orderAddress">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <table class="table table-striped table-sm" id="orderTable">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Mã đơn hàng</th>
+                            <th>Tổng số tiền</th>
+                            <th>Chi tiết</th>
+                            <th>Thành Tiền</th>
+                        </tr>
+                        </thead>
+                        <tbody id="order_tbody"></tbody>
+                    </table>
+                </div>
+
+                <!-- Product -->
+
+                <div class="table-responsive hidden" id="product_t">
+
+                    <div class="i_modal" id="c_modal">
+                        <div class="i_modal_content">
+                            <table border="0">
+                                <tr>
+                                    <th>Tên sản phẩm</th>
+                                    <td>
+                                        <input type="text" class="form-control n_" value="" id="n_productName">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Hình ảnh sản phẩm</th>
+                                    <td>
+                                        <input type="file" class="form-control n_" value="" id="n_productImg">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Giới thiệu sản phẩm</th>
+                                    <td>
+                                        <input type="text" class="form-control n_" value="" id="n_productSummary">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Chi tiết sản phẩm</th>
+                                    <td>
+                                        <input type="text" class="form-control n_" value="" id="n_productDescription">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Số lượng sản phẩm</th>
+                                    <td>
+                                        <input type="text" class="form-control n_" value="" id="n_productAmount">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Origin</th>
+                                    <td>
+                                        <input type="text" class="form-control n_" value="" id="n_productOrigin">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Loại sản phẩm</th>
+                                    <td>
+                                        <input type="text" class="form-control n_" value="" id="n_productCategory">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Giá đơn</th>
+                                    <td>
+                                        <input type="text" class="form-control n_" value="" id="n_productPrice">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td>
+                                        <button type="button" class="btn btn-outline-success" id="save_product_btn">Lưu sản phẩm</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td>
+                                        <button type="button" class="btn btn-outline-danger" value="" onclick="delete_no()">Hủy</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="i_modal" id="p_modal">
+                        <div class="i_modal_content">
+                            <table border="0">
+                                <tr>
+                                    <th>Tên sản phẩm</th>
+                                    <td>
+                                        <input type="text" class="form-control r-only" value="" disabled id="productName">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Hình ảnh sản phẩm</th>
+                                    <td>
+                                        <img class="form-control r-only" src="" id="productImg">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Giới thiệu sản phẩm</th>
+                                    <td>
+                                        <input type="text" class="form-control r-only" value="" disabled id="productSummary">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Chi tiết sản phẩm</th>
+                                    <td>
+                                        <input type="text" class="form-control r-only" value="" disabled id="productDescription">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Số lượng sản phẩm</th>
+                                    <td>
+                                        <input type="text" class="form-control r-only" value="" disabled id="productAmount">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Origin</th>
+                                    <td>
+                                        <input type="text" class="form-control r-only" value="" disabled id="productOrigin">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Loại sản phẩm</th>
+                                    <td>
+                                        <input type="text" class="form-control r-only" value="" disabled id="productCategory">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Giá đơn</th>
+                                    <td>
+                                        <input type="text" class="form-control r-only" value="" disabled id="productPrice">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td>
+                                        <button type="button" class="btn btn-outline-success" value="" onclick="edit_modal()" id="edit_product">Sửa sản phẩm</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td>
+                                        <button type="button" class="btn btn-outline-danger" value="" onclick="delete_modal()" id="delete_product">Xóa sản phẩm</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <table class="table table-striped table-sm" id="productTable">
+                        <thead>
+                        <tr>
+                            <th class="hidden">Id</th>
+                            <th>#</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Số lượng</th>
+                            <th>Chi tiết</th>
+                        </tr>
+                        </thead>
+                        <tbody id="product_tbody"></tbody>
+                    </table>
+                    <button type="button" class="btn btn-secondary" onclick="create_modal()">Thêm sản phẩm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer_background" style="background-image:url(/assets/images/footer_background1.jpg); opacity: 0.4"></div>
+        <div class="container">
+            <div class="row footer_row">
+                <div class="col">
+                    <div class="footer_content">
+                        <div class="row">
+
+                            <div class="col-lg-3 footer_col">
+
+                                <!-- Footer About -->
+                                <div class="footer_section footer_about">
+                                    <div class="footer_logo_container">
+                                        <a href="#">
+                                            <div class="footer_logo_text">Nhom<span>22</span></div>
+                                        </a>
+                                    </div>
+                                    <div class="footer_about_text">
+                                        <p>Lorem ipsum dolor sit ametium, consectetur adipiscing elit.</p>
+                                    </div>
+                                    <div class="footer_social">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-3 footer_col">
+
+                                <!-- Footer Contact -->
+                                <div class="footer_section footer_contact">
+                                    <div class="footer_title">Contact Us</div>
+                                    <div class="footer_contact_info">
+                                        <ul>
+                                            <li>Email: nhom22@gmail.com</li>
+                                            <li>Phone:  09876543321</li>
+                                            <li>Bách Khoa Hà Nội</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-3 footer_col">
+
+                                <!-- Footer links -->
+                                <div class="footer_section footer_links">
+                                    <div class="footer_title">Liên hệ chúng tôi</div>
+                                    <div class="footer_links_container">
+                                        <ul>
+                                            <li><a href="/">Home</a></li>
+                                            <li><a href="index.html">Thông tin</a></li>
+                                            <li><a href="index.html">Liên hệ</a></li>
+                                            <li><a href="#">Giới thiệu</a></li>
+                                            <li><a href="index.html">Sản phẩm</a></li>
+                                            <li><a href="#">Sự kiện</a></li>
+                                            <li><a href="#">Triển lãm</a></li>
+                                            <li><a href="#">Hỏi đáp</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-3 footer_col clearfix">
+
+                                <!-- Footer links -->
+                                <div class="footer_section footer_mobile">
+                                    <div class="footer_title">Trên Di Động</div>
+                                    <div class="footer_mobile_content">
+                                        <div class="footer_image"><a href="#"><img src="/assets/images/mobile_1.jpg" alt=""></a></div>
+                                        <div class="footer_image"><a href="#"><img src="/assets/images/mobile_2.jpg" alt=""></a></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row copyright_row">
+                <div class="col">
+                    <h3 style="color: white">END</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jqmin.js"></script>
+    <script src="styles/sp/popper.js"></script>
+    <script src="styles/sp/sp.js"></script>
+    <script type="text/javascript" src="js/admin.js"></script>
+</div>
+</body>
+</html> 

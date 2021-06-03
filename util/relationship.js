@@ -1,0 +1,34 @@
+const Product = require('../model/product');
+const User = require('../model/user');
+const UserRating = require('../model/userRating');
+const Order = require('../model/order');
+const Comment = require('../model/comment');
+const CartItem = require('../model/cartItem');
+const ProductRating = require('../model/productRating');
+const Cart = require("../model/cart");
+const OrderItem = require("../model/orderItem");
+const Category = require("../model/category");
+
+exports.relationship = () => {
+    Product.hasOne(ProductRating);
+    ProductRating.belongsTo(Product);
+    Product.hasMany(UserRating);
+    User.hasMany(UserRating);
+    Product.hasMany(Comment);
+    Category.hasMany(Product);
+    User.hasMany(Comment);
+    Comment.belongsTo(User);
+    Cart.belongsToMany(Product, {through: CartItem});
+    Product.belongsToMany(Cart, {through: CartItem});
+    Cart.belongsTo(User);
+    User.hasOne(Cart);
+//    OrderItem.belongsTo(Order);
+    User.hasMany(Order);
+    UserRating.belongsTo(User);
+    Order.belongsTo(User);
+    Order.belongsToMany(Product, { through: OrderItem });
+    Product.belongsToMany(Order, {through: OrderItem});
+    OrderItem.belongsTo(Product);
+    Product.belongsTo(Category);
+    CartItem.belongsTo(Product);
+};

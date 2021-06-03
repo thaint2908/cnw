@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About Product</title>
+	<link rel="stylesheet" type="text/css" href="styles/sp/sptemp.css">
+	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+	<link rel="stylesheet" type="text/css" href="styles/detail.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="super_container">
+		<!-- Header -->
+		<header class="header">
+			
+		<!-- Top Bar -->
+			<div class="top_bar">
+				<div class="top_bar_container">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
+									<ul class="top_bar_contact_list">
+										<li>
+											<a id="question" href="">Have any question ?</a>
+										</li>
+										<li>
+											<a href="">
+												<i class="fa fa-phone" aria-hidden="true"></i>
+												<div>0987654321</div>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<i class="fa fa-envelope-o" aria-hidden="true"></i>
+												<div>nhom22@gmail.com</div>
+											</a>
+										</li>
+									</ul>
+									<div class="top_bar_login ml-auto">
+										<div id="auth"  class="login_button"><a  href="/login">Login Or SignUp </a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+ 
+			<!-- Header Content -->
+			<div class="header_container">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="header_content d-flex flex-row align-items-center justify-content-start">
+								<div class="logo_container">
+									<a href="#">
+										<img src="assets/images/logo.jpg" alt="">
+									</a>
+								</div>
+								<nav class="main_nav_contaner ml-auto">
+									<ul class="main_nav">
+										<li ><a href="/index">Home</a></li>
+										<li class="active"><a href="/products">Products</a></li>
+										<li id="hidden_item"><a href="/contact">Contact</a></li>
+										<li id="hidden_item" class="user_link"><a href="/user">User</a></li>
+										<li id="hidden_item" class="dashboard"><a href="/admin">DashBoard</a></li>
+									</ul>
+									<div class="search_button"><i id="hidden_item" class="fa fa-search" aria-hidden="true"></i></div>
+
+									<!-- Bonus tag -->
+
+									<div class="shopping_cart">
+										<a href="/cart"><i id="hidden_item" class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+									</div>
+									<div class="hamburger menu_mm">
+										<i class="fa fa-bars menu_mm" aria-hidden="true"></i>
+									</div>
+								</nav>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Header Search Panel -->
+			<div class="header_search_container">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="header_search_content d-flex flex-row align-items-center justify-content-end">
+								<form action="#" class="header_search_form">
+									<input type="search" class="search_input" placeholder="Search" required="required">
+									<button class="header_search_button d-flex flex-column align-items-center justify-content-center">
+										<i class="fa fa-search" aria-hidden="true"></i>
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>			
+			</div>			
+		</header>
+
+		<!-- Home -->
+
+		<div class="home">
+			<div class="breadcrumbs_container">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="breadcrumbs">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="courses.html">Products</a></li>
+									<li>Product Details</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+
+
+
+<!-- product -------------------------------------------------------------------->
+		<div class="product">
+			<div class="backgr" style="background-image: url(assets/images/features_background.jpg); opacity: 0.15; position: absolute; width: 100%; height: 100%"></div>
+			<div class="container">
+				<div class="row">
+					<!-- menu trai -->
+					<div class="col-lg-8 leftmenu">
+						<div class="container">
+							<div class="product_title" id="name_pro">ten san pham</div>
+							<div class="review">
+								<div class="review_item">
+									<div class="item_title">Xuất sứ</div>
+									<div class="item_content">
+										<p id="origin">Viet Nam</p>
+									</div>
+								</div>
+								<div class="review_item">
+									<div class="item_title">Review</div>
+									<div class="rating_r rating_r_4"><i></i><i></i><i></i><i></i><i></i></div>
+								</div>
+								<div class="review_item">
+									<div class="item_title">Phân loại</div>
+									<div id="category" class="item_content">
+										<a href="" >Gấu nhỏ</a>
+									</div>
+								</div>
+							</div>
+							<div class="img" id="hinhanh">
+								hinh anh 
+							</div>
+ 
+							<form id="amountForm" class="order" style="margin: 25px 0px 0 0; font-size: 17px;">
+								<p style="font-size: 20px; font-weight: 600;">Select amount</p>
+								<input id="amount_input" type="number" value="1" min="1" class="quantity-field">
+								<input type="submit" class="btn btn-primary btn-sm"/>
+							</form>
+
+
+							<div class="description">
+								<div class="tabs">
+									<div class="des tab_item">Mô Tả</div>
+									<div class="comment tab_item">Bình Luận</div>
+									<div class="tab_item active">Đánh Giá</div>
+								</div>
+								<div class="tab_panels">
+									<div id="tab_des" class="tab_des">
+										<div class="tab1_title">
+											Tên sản phẩm này
+										</div>
+										<div class="tab1_content" id="description_pro">
+											noi dung mo ta
+										</div>
+									</div>
+									<div class="tab_des tab_comment">
+										<div class="comments_container">
+											<ul id="comment_list" class="comments_list">
+												<li>
+													<div class="comment_item d-flex flex-row align-items-start jutify-content-start">
+														<div class="comment_image"><div><img src="assets/images/logo.jpg" alt=""></div></div>
+														<div class="comment_content">
+															<div class="comment_title_container d-flex flex-row align-items-center justify-content-start">
+																<div class="comment_author"><a href="#">User1</a></div>
+																<div class="comment_rating"><div class="rating_r rating_r_4"><i></i><i></i><i></i><i></i><i></i></div></div>
+																<div class="comment_time ml-auto">1 day ago</div>
+															</div>
+															<div class="comment_text">
+																<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, beatae quaerat? At reprehenderit beatae omnis et hic eum, eligendi recusandae saepe blanditiis quis amet voluptatum iste debitis nisi dolorum animi.</p>
+															</div>
+															<div class="comment_extras d-flex flex-row align-items-center justify-content-start">
+																<div class="comment_extra comment_likes"><a href="#"><i class="fa fa-heart" aria-hidden="true"></i><span>15</span></a></div>
+																<div class="comment_extra comment_reply"><a href="#"><i class="fa fa-reply" aria-hidden="true"></i><span>Reply</span></a></div>
+															</div>
+														</div>
+													</div>
+													<ul>
+														<li>
+															<div class="comment_item d-flex flex-row align-items-start jutify-content-start">
+																<div class="comment_image"><div><img src="assets/images/logo.jpg" alt=""></div></div>
+																<div class="comment_content">
+																	<div class="comment_title_container d-flex flex-row align-items-center justify-content-start">
+																		<div class="comment_author"><a href="#">User2</a></div>
+																		<div class="comment_rating"><div class="rating_r rating_r_4"><i></i><i></i><i></i><i></i><i></i></div></div>
+																		<div class="comment_time ml-auto">1 day ago</div>
+																	</div>
+																	<div class="comment_text">
+																		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod voluptas qui adipisci doloribus quae culpa explicabo ipsa minus, sed sit pariatur ipsum ratione vitae magni porro inventore omnis placeat! Ab!</p>
+																	</div>
+																	<div class="comment_extras d-flex flex-row align-items-center justify-content-start">
+																		<div class="comment_extra comment_likes"><a href="#"><i class="fa fa-heart" aria-hidden="true"></i><span>15</span></a></div>
+																		<div class="comment_extra comment_reply"><a href="#"><i class="fa fa-reply" aria-hidden="true"></i><span>Reply</span></a></div>
+																	</div>
+																</div>
+															</div>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<div class="comment_item d-flex flex-row align-items-start jutify-content-start">
+														<div class="comment_image"><div><img src="assets/images/logo.jpg" alt=""></div></div>
+														<div class="comment_content">
+															<div class="comment_title_container d-flex flex-row align-items-center justify-content-start">
+																<div class="comment_author"><a href="#">User3</a></div>
+																<div class="comment_rating"><div class="rating_r rating_r_4"><i></i><i></i><i></i><i></i><i></i></div></div>
+																<div class="comment_time ml-auto">1 day ago</div>
+															</div>
+															<div class="comment_text">
+																<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam dolore soluta nobis iure, quisquam quasi in? Quis dignissimos quod quo magni culpa, expedita ut obcaecati in itaque illo labore ex.</p>
+															</div>
+															<div class="comment_extras d-flex flex-row align-items-center justify-content-start">
+																<div class="comment_extra comment_likes"><a href="#"><i class="fa fa-heart" aria-hidden="true"></i><span>15</span></a></div>
+																<div class="comment_extra comment_reply"><a href="#"><i class="fa fa-reply" aria-hidden="true"></i><span>Reply</span></a></div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<div id="form_comment" >
+												<form id="commentForm">
+													ý kiến của bạn: 
+													<input id="comment_text" type="text" name="comment" >
+													<br>
+													<input type="submit" class="btn btn-primary btn-sm">
+												</form>
+
+											</div>
+										</div>
+									</div>
+									<div class="tab_des active tab_rating">
+										<div class="tab_panel_title">Product Review</div>
+										<div class="review_rating_container">
+											<div class="total_rating" id="total_rating">
+												<div class="review_rating">
+													<div class="review_rating_num">4.5</div>
+													<div class="review_rating_stars">
+														<div class="rating_r rating_r_4"><i></i><i></i><i></i><i></i><i></i></div>
+													</div>
+													<div class="review_rating_text">(28 Ratings)</div>
+												</div>
+												<div class="review_rating_bars">
+													<ul>
+														<li><span>5 Star</span><div class="review_rating_bar"><div style="width:90%;"></div></div></li>
+														<li><span>4 Star</span><div class="review_rating_bar"><div style="width:75%;"></div></div></li>
+														<li><span>3 Star</span><div class="review_rating_bar"><div style="width:32%;"></div></div></li>
+														<li><span>2 Star</span><div class="review_rating_bar"><div style="width:10%;"></div></div></li>
+														<li><span>1 Star</span><div class="review_rating_bar"><div style="width:3%;"></div></div></li>
+													</ul>
+												</div>
+											</div>
+											<div class="rating">
+												<h3 style=" margin-right: 50px;">Ban nghi sao ve san pham nay</h3>
+												<span class="rating__result"></span> 
+											   <i class="rating__star fa fa-star-o"></i>
+											   <i class="rating__star fa fa-star-o"></i>
+											   <i class="rating__star fa fa-star-o"></i>
+											   <i class="rating__star fa fa-star-o"></i>
+											   <i class="rating__star fa fa-star-o"></i>
+											</div>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-4 rightmenu">
+						<div class="info_section">
+							<div class="info_title">Thong tin san pham</div>
+							<div class="info_price" id="price_info">180vnd</div>
+							<div class="info_list">
+								<div class="info_item">
+									<div class="info_ad">
+										<i class="fa fa-bus"></i>
+										<p>ma san pham :</p>
+									</div> 
+									<div class="info_res" id="proid">1200</div>
+								</div>
+								<div class="info_item">
+									<div class="info_ad">
+										<i class="fa fa-diamond"></i>
+										<p>so luong :</p>
+									</div>
+									<div class="info_res" id="amount">1200</div>
+								</div>
+								<div class="info_item">
+									<div class="info_ad">
+										<i class="fa fa-flag" aria-hidden="true"></i>
+										<p>nguon goc:</p>
+									</div>
+									<div class="info_res" id="nguongoc">1200</div>
+								</div>
+								<div class="info_item">
+									<div class="info_ad">
+										<i class="fa fa-users" aria-hidden="true"></i>
+										<p>phan loai:</p>
+									</div>
+									<div class="info_res" id="phanloai">1200</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	   <!-- footer -->
+	   <footer class="footer">
+        <div class="footer_background" style="background-image:url(/assets/images/footer_background1.jpg); opacity: 0.4"></div>
+        <div class="container">
+            <div class="row footer_row">
+                <div class="col">
+                    <div class="footer_content">
+                        <div class="row">
+
+                            <div class="col-lg-3 footer_col">
+
+                                <!-- Footer About -->
+                                <div class="footer_section footer_about">
+                                    <div class="footer_logo_container">
+                                        <a href="#">
+                                            <div class="footer_logo_text">Nhom<span>22</span></div>
+                                        </a>
+                                    </div>
+                                    <div class="footer_about_text">
+                                        <p>Lorem ipsum dolor sit ametium, consectetur adipiscing elit.</p>
+                                    </div>
+                                    <div class="footer_social">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-3 footer_col">
+
+                                <!-- Footer Contact -->
+                                <div class="footer_section footer_contact">
+                                    <div class="footer_title">Contact Us</div>
+                                    <div class="footer_contact_info">
+                                        <ul>
+                                            <li>Email: nhom22@gmail.com</li>
+                                            <li>Phone:  09876543321</li>
+                                            <li>Bách Khoa Hà Nội</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-3 footer_col">
+
+                                <!-- Footer links -->
+                                <div class="footer_section footer_links">
+                                    <div class="footer_title">Liên hệ chúng tôi</div>
+                                    <div class="footer_links_container">
+                                        <ul>
+                                            <li><a href="/">Home</a></li>
+                                            <li><a href="index.html">Thông tin</a></li>
+                                            <li><a href="index.html">Liên hệ</a></li>
+                                            <li><a href="#">Giới thiệu</a></li>
+                                            <li><a href="index.html">Sản phẩm</a></li>
+                                            <li><a href="#">Sự kiện</a></li>
+                                            <li><a href="#">Triển lãm</a></li>
+                                            <li><a href="#">Hỏi đáp</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-3 footer_col clearfix">
+
+                                <!-- Footer links -->
+                                <div class="footer_section footer_mobile">
+                                    <div class="footer_title">Trên Di Động</div>
+                                    <div class="footer_mobile_content">
+                                        <div class="footer_image"><a href="#"><img src="/assets/images/mobile_1.jpg" alt=""></a></div>
+                                        <div class="footer_image"><a href="#"><img src="/assets/images/mobile_2.jpg" alt=""></a></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row copyright_row">
+                <div class="col">
+                    <h3 style="color: white">END</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="js/jqmin.js"></script>
+<script src="styles/sp/popper.js"></script>
+<script src="styles/sp/sp.js"></script>
+<script src="js/detail.js"></script>
+</body>
+</html>

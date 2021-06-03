@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Products</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Unicat project">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/sp/sptemp.css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+	<link rel="stylesheet" type="text/css" href="styles/products.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+	<header class="header">
+
+		<!-- Top Bar -->
+		<div class="top_bar">
+			<div class="top_bar_container">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
+								<ul class="top_bar_contact_list">
+									<li>
+										<a id="question" href="">Have any question ?</a>
+									</li>
+									<li>
+										<a href="">
+											<i class="fa fa-phone" aria-hidden="true"></i>
+											<div>0987654321</div>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<i class="fa fa-envelope-o" aria-hidden="true"></i>
+											<div>nhom22@gmail.com</div>
+										</a>
+									</li>
+								</ul>
+								<div class="top_bar_login ml-auto">
+									<div id="auth"  class="login_button"><a  href="/login">Login Or SignUp </a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Header Content -->
+		<div class="header_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="header_content d-flex flex-row align-items-center justify-content-start">
+							<div class="logo_container">
+								<a href="#">
+									<img src="assets/images/logo.jpg" alt="">
+								</a>
+							</div>
+							<nav class="main_nav_contaner ml-auto">
+								<ul class="main_nav">
+									<li ><a href="/index">Home</a></li>
+									<li class="active"><a href="/products">Products</a></li>
+									<li id="hidden_item"><a href="/contact">Contact</a></li>
+									<li id="hidden_item" class="user_link"><a href="/user">User</a></li>
+									<li id="hidden_item" class="dashboard"><a href="/admin">DashBoard</a></li>
+								</ul>
+								<div class="search_button"><i id="hidden_item" class="fa fa-search" aria-hidden="true"></i></div>
+
+								<!-- Bonus tag -->
+
+								<div class="shopping_cart">
+									<a href="/cart"><i id="hidden_item" class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+								</div>
+								<div class="hamburger menu_mm">
+									<i class="fa fa-bars menu_mm" aria-hidden="true"></i>
+								</div>
+							</nav>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Header Search Panel -->
+		<div class="header_search_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="header_search_content d-flex flex-row align-items-center justify-content-end">
+							<form action="#" class="header_search_form">
+								<input type="search" class="search_input" placeholder="Search" required="required">
+								<button class="header_search_button d-flex flex-column align-items-center justify-content-center">
+									<i class="fa fa-search" aria-hidden="true"></i>
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Home -->
+
+	<div class="home">
+		<div class="breadcrumbs_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="breadcrumbs">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>Products</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Content About Product -->
+	<div class="products" >
+		<div class="background" style="background: #db35355c; background-image:url(assets/images/features_background.jpg); opacity: 0.15;position: absolute;top: 0;left: 0;width: 100%;height: 115%;"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="search_container">
+						<input  autocomplete="off" id="search" class="products_input" type="search" placeholder="Select products">
+						<button class="search_button_top" action = "submit" >Search Now</button>
+					</div>
+					<div class="products_container">
+						<div class="row" id="listProduct">
+							danh sach san pham
+						</div>
+					</div>
+				</div>
+
+				<!-- 	Menu phai -->
+				<div class="col-lg-4">
+					<div class="right_menu">
+
+						<!-- Categorise -->
+						<div class="categories">
+							<div class="title">Loại sản phẩm</div>
+							<div class="section">
+								<ul id="list_cate">
+								</ul>
+							</div>
+						</div>
+						<!-- 	San pham moi nhat -->
+						<div class="newest_products">
+							<div class="new_title">Sản phẩm mới nhất </div>
+							<div id="list_newest_pro">
+								<div class="new_product">
+									<img src="assets/images/sanpham2.jpg" alt="anh so 1">
+									<div class="new_contesnt">
+										<div class="new_para">Lorem ipsum dolor sit amet consectetur, adipisicing, eli </div>
+										<div class="new_price">$120</div>
+									</div>
+								</div>
+								<div class="new_product">
+									<img src="assets/images/sanpham2.jpg" alt="anh so 1">
+									<div class="new_contesnt">
+										<div class="new_para">Lorem ipsum dolor sit amet consectetur, adipisicing, eli </div>
+										<div class="new_price">$120</div>
+									</div>
+								</div>
+								<div class="new_product">
+									<img src="assets/images/sanpham2.jpg" alt="anh so 1">
+									<div class="new_contesnt">
+										<div class="new_para">Lorem ipsum dolor sit amet consectetur, adipisicing, eli </div>
+										<div class="new_price">$120</div>
+									</div>
+								</div>
+								<div class="new_product">
+									<img src="assets/images/sanpham2.jpg" alt="anh so 1">
+									<div class="new_contesnt">
+										<div class="new_para">Lorem ipsum dolor sit amet consectetur, adipisicing, eli </div>
+										<div class="new_price">$120</div>
+									</div>
+								</div>
+								<div class="new_product">
+									<img src="assets/images/sanpham2.jpg" alt="anh so 1">
+									<div class="new_contesnt">
+										<div class="new_para">Lorem ipsum dolor sit amet consectetur, adipisicing, eli </div>
+										<div class="new_price">$120</div>
+									</div>
+								</div>
+								<div class="new_product">
+									<img src="assets/images/sanpham2.jpg" alt="anh so 1">
+									<div class="new_contesnt">
+										<div class="new_para">Lorem ipsum dolor sit amet consectetur, adipisicing, eli </div>
+										<div class="new_price">$120</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- 	Instagram -->
+						<div class="instagram">
+							<div class="insta_title">Instagram</div>
+							<div class="insta_content">
+								<ul class="list_image">
+									<li>
+										<a href=""><img src="assets/images/event_4.jpg" alt="anh insta "></a>
+									</li>
+									<li>
+										<a href=""><img src="assets/images/event_4.jpg" alt="anh insta "></a>
+									</li>
+									<li>
+										<a href=""><img src="assets/images/event_4.jpg" alt="anh insta "></a>
+									</li>
+									<li>
+										<a href=""><img src="assets/images/event_4.jpg" alt="anh insta "></a>
+									</li>
+									<li>
+										<a href=""><img src="assets/images/event_4.jpg" alt="anh insta "></a>
+									</li>
+									<li>
+										<a href=""><img src="assets/images/event_4.jpg" alt="anh insta "></a>
+									</li>
+									<li>
+										<a href=""><img src="assets/images/event_4.jpg" alt="anh insta "></a>
+									</li>
+									<li>
+										<a href=""><img src="assets/images/event_4.jpg" alt="anh insta "></a>
+									</li>
+									<li>
+										<a href=""><img src="assets/images/event_4.jpg" alt="anh insta "></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- Download App -->
+						<div class="app">
+							<div class="app_background" style="background-image:url(assets/images/sanpham1.jpg); opacity: 0.5"></div>
+							<div class="app_overlay"></div>
+							<div class="app_content">
+								<div class="app_title">Free Download</div>
+								<div class="app_button">
+									<a href="#">Download</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Pagination - list -->
+	<div class="container">
+		<div class="pagination">
+			
+			<p>
+				<a href="" id="btn-prev">Prev</a>
+				<a href="" id="btn-next">Next</a>
+			</p>
+			<p id="page_para">Page <span id="page_span"></span></p>
+		</div>
+	</div>
+
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="footer_background" style="background-image:url(assets/images/footer_background1.jpg); opacity: 0.4"></div>
+		<div class="container">
+			<div class="row footer_row">
+				<div class="col">
+					<div class="footer_content">
+						<div class="row">
+
+							<div class="col-lg-3 footer_col">
+
+								<!-- Footer About -->
+								<div class="footer_section footer_about">
+									<div class="footer_logo_container">
+										<a href="#">
+											<div class="footer_logo_text">Nhom<span>22</span></div>
+										</a>
+									</div>
+									<div class="footer_about_text">
+										<p>Lorem ipsum dolor sit ametium, consectetur adipiscing elit.</p>
+									</div>
+									<div class="footer_social">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-lg-3 footer_col">
+
+								<!-- Footer Contact -->
+								<div class="footer_section footer_contact">
+									<div class="footer_title">Contact Us</div>
+									<div class="footer_contact_info">
+										<ul>
+											<li>Email: nhom22@gmail.com</li>
+											<li>Phone:  09876543321</li>
+											<li>Bách Khoa Hà Nội</li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-lg-3 footer_col">
+
+								<!-- Footer links -->
+								<div class="footer_section footer_links">
+									<div class="footer_title">Liên hệ chúng tôi</div>
+									<div class="footer_links_container">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="index.html">Thông tin</a></li>
+											<li><a href="index.html">Liên hệ</a></li>
+											<li><a href="#">Giới thiệu</a></li>
+											<li><a href="index.html">Sản phẩm</a></li>
+											<li><a href="#">Sự kiện</a></li>
+											<li><a href="#">Triển lãm</a></li>
+											<li><a href="#">Hỏi đáp</a></li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-lg-3 footer_col clearfix">
+
+								<!-- Footer links -->
+								<div class="footer_section footer_mobile">
+									<div class="footer_title">Trên Di Động</div>
+									<div class="footer_mobile_content">
+										<div class="footer_image"><a href="#"><img src="assets/images/mobile_1.jpg" alt=""></a></div>
+										<div class="footer_image"><a href="#"><img src="assets/images/mobile_2.jpg" alt=""></a></div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row copyright_row">
+				<div class="col">
+					<h3 style="color: white">END</h3>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="styles/sp/popper.js"></script>
+	<script src="styles/sp/sp.js"></script>
+	<script src="js/products.js"></script>
+
+</body>
+</html>

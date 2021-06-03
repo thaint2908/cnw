@@ -1,0 +1,301 @@
+<html lang="en">
+
+<head>
+    <title>Gio Hang</title>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="styles/sp/sptemp.css" rel="stylesheet" type="text/css">
+    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="plugins/OwlCarousel2-2.2.1/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css" rel="stylesheet" type="text/css">
+    <link href="plugins/OwlCarousel2-2.2.1/animate.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="styles/cart.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles/bttemp.css">
+    <script src="js/jqtemp.js"></script>
+    <script src="js/bttemp.js"></script>
+
+</head>
+
+<body>
+<!-- Header -->
+<header class="header">
+
+    <!-- Top Bar -->
+    <div class="top_bar">
+        <div class="top_bar_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
+                            <ul class="top_bar_contact_list">
+                                <li>
+                                    <a href="" id="question">Have any question ?</a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i aria-hidden="true" class="fa fa-phone"></i>
+                                        <div>0987654321</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i aria-hidden="true" class="fa fa-envelope-o"></i>
+                                        <div>nhom22@gmail.com</div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="top_bar_login ml-auto">
+                                <div class="login_button" id="auth"><a href="/login">Login Or SignUp </a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Content -->
+    <div class="header_container">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="header_content d-flex flex-row align-items-center justify-content-start">
+                        <div class="logo_container">
+                            <a href="#">
+                                <img alt="" src="assets/images/logo.jpg">
+                            </a>
+                        </div>
+                        <nav class="main_nav_contaner ml-auto">
+                            <ul class="main_nav">
+                                <li><a href="/index">Home</a></li>
+                                <li id="hidden_item"><a href="/products">Products</a></li>
+                                <li id="hidden_item"><a href="/contact">Contact</a></li>
+                                <li class="user_link" id="hidden_item"><a href="/user">User</a></li>
+                                <li class="dashboard" id="hidden_item"><a href="/admin">DashBoard</a></li>
+                            </ul>
+                            <div class="search_button"><i aria-hidden="true" class="fa fa-search" id="hidden_item"></i>
+                            </div>
+
+                            <!-- Bonus tag -->
+
+                            <div class="shopping_cart">
+                                <a href="/cart"><i aria-hidden="true" class="fa fa-shopping-cart active"
+                                                   id="hidden_item"></i></a>
+                            </div>
+                            <div class="hamburger menu_mm">
+                                <i aria-hidden="true" class="fa fa-bars menu_mm"></i>
+                            </div>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Search Panel -->
+    <div class="header_search_container">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="header_search_content d-flex flex-row align-items-center justify-content-end">
+                        <form action="#" class="header_search_form">
+                            <input class="search_input" placeholder="Search" required="required" type="search">
+                            <button class="header_search_button d-flex flex-column align-items-center justify-content-center">
+                                <i aria-hidden="true" class="fa fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!-- Cart-------------------------------------------------------------------------------------->
+<div class="cart_main container" style="padding-top:200px">
+    <div class="row">
+        <div class="basket">
+            <div class="basket-labels">
+                <ul>
+                    <li class="item item-heading">Product</li>
+                    <li class="price">Price</li>
+                    <li class="quantity">Quantity</li>
+                    <li class="subtotal">Total Money</li>
+                </ul>
+            </div>
+            <!-- danh sach san pham -->
+            <div class="list_cart" id="list_cart">
+
+
+            </div><!-- danh sach san pham -->
+        </div>
+
+        <aside>
+            <div class="summary">
+                <div class="summary-total-items"><span class="total-items" id="total_pro"></span> sản phẩm trong giỏ
+                    hàng
+                </div>
+                <div class="summary-subtotal">
+                    <div class="subtotal-title">Subtotal</div>
+                    <div class="subtotal-value final-value" id="basket-subtotal">130.00</div>
+                    <div class="summary-promo hide">
+                        <div class="promo-title">Promotion</div>
+                        <div class="promo-value final-value" id="basket-promo"></div>
+                    </div>
+                </div>
+                <div class="summary-delivery">
+                    <select class="summary-delivery-selection" name="delivery-collection">
+                        <option selected="selected" value="0">Chọn phương thức thanh toán</option>
+                        <option value="collection">Giao hàng</option>
+                        <option value="first-class">MoMo</option>
+                        <option value="second-class">ViettelPay</option>
+                    </select>
+                </div>
+                <div class="summary-total">
+                    <div class="total-title">Total</div>
+                    <div class="total-value final-value" id="basket-total">130.00</div>
+                </div>
+                <div class="text-center">
+                    <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">Checkout</a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Detail Bill</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3">
+                    <div id="modal_checkout" class="md-form mb-5">
+                        <ul style="display: inline-grid;">
+                            <li><Strong>OrderId</Strong> 01</li>
+                            <li><Strong>Total Products</Strong> 01</li>
+                            <li><Strong>Total Price</Strong> 01</li>
+                            <li><Strong>Date time: </Strong> 01</li>
+                        </ul>
+                        <p>---------------------------------------------------</p>
+
+
+                    </div>
+
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button id="pay_button" class="btn btn-default">Pay</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<script src="js/cart.js" type="text/javascript"></script>
+</body>
+
+<footer class="footer">
+    <div class="footer_background" style="background-image:url(assets/images/footer_background1.jpg); opacity: 0.4"></div>
+    <div class="container">
+        <div class="row footer_row">
+            <div class="col">
+                <div class="footer_content">
+                    <div class="row">
+
+                        <div class="col-lg-3 footer_col">
+                
+                            <!-- Footer About -->
+                            <div class="footer_section footer_about">
+                                <div class="footer_logo_container">
+                                    <a href="#">
+                                        <div class="footer_logo_text">Nhom<span>22</span></div>
+                                    </a>
+                                </div>
+                                <div class="footer_about_text">
+                                    <p>Lorem ipsum dolor sit ametium, consectetur adipiscing elit.</p>
+                                </div>
+                                <div class="footer_social">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="col-lg-3 footer_col">
+                
+                            <!-- Footer Contact -->
+                            <div class="footer_section footer_contact">
+                                <div class="footer_title">Contact Us</div>
+                                <div class="footer_contact_info">
+                                    <ul>
+                                        <li>Email: nhom22@gmail.com</li>
+                                        <li>Phone:  09876543321</li>
+                                        <li>Bách Khoa Hà Nội</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="col-lg-3 footer_col">
+                
+                            <!-- Footer links -->
+                            <div class="footer_section footer_links">
+                                <div class="footer_title">Liên hệ chúng tôi</div>
+                                <div class="footer_links_container">
+                                    <ul>
+                                        <li><a href="/index">Home</a></li>
+                                        <li><a href="/index">Thông tin</a></li>
+                                        <li><a href="/index">Liên hệ</a></li>
+                                        <li><a href="#">Giới thiệu</a></li>
+                                        <li><a href="/index">Sản phẩm</a></li>
+                                        <li><a href="#">Sự kiện</a></li>
+                                        <li><a href="#">Triển lãm</a></li>
+                                        <li><a href="#">Hỏi đáp</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="col-lg-3 footer_col clearfix">
+                
+                            <!-- Footer links -->
+                            <div class="footer_section footer_mobile">
+                                <div class="footer_title">Trên Di Động</div>
+                                <div class="footer_mobile_content">
+                                    <div class="footer_image"><a href="#"><img src="assets/images/mobile_1.jpg" alt=""></a></div>
+                                    <div class="footer_image"><a href="#"><img src="assets/images/mobile_2.jpg" alt=""></a></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row copyright_row">
+            <div class="col">
+                <h3 style="color: white">END</h3>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>

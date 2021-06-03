@@ -1,0 +1,51 @@
+*{
+    margin:0 0 ;
+}
+
+.login-btn{
+    margin: 40px 15%;
+}
+
+.input-group-addon{
+    width: 150px;
+    padding-left: 20px;
+}
+
+.input-group{
+    width: 450px;
+}
+
+.las{
+    margin-top: 40px;
+    margin-left: 37%;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.las span{
+    cursor: pointer;
+}
+
+.las span:not(:last-child){
+    margin-right: 40px;
+}
+
+.las_a{
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.las_a:hover{
+    color: black;
+}
+
+.las_f{
+    margin-left: 30%;
+}
+
+.hidden{
+    display: none;
+}

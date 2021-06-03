@@ -1,0 +1,306 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User</title>
+  <link rel="stylesheet" type="text/css" href="styles/sp/sptemp.css">
+  <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+  <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+  <link rel="stylesheet" type="text/css" href="styles/user.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<!-- Page Content -->
+<div class="container">
+
+  <!-- Header -->
+
+  <header class="header">
+
+    <!-- Top Bar -->
+    <div class="top_bar">
+      <div class="top_bar_container">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
+                <ul class="top_bar_contact_list">
+                  <li>
+                    <a id="question" href="">Have any question ?</a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fa fa-phone" aria-hidden="true"></i>
+                      <div>0987654321</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                      <div>nhom22@gmail.com</div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="top_bar_login ml-auto">
+                  <div id="auth" class="login_button"><a href="/login">Logout</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header Content -->
+    <div class="header_container">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="header_content d-flex flex-row align-items-center justify-content-start">
+              <div class="logo_container">
+                <a href="#">
+                  <img src="assets/images/logo.jpg" alt="">
+                </a>
+              </div>
+              <nav class="main_nav_contaner ml-auto">
+                <ul class="main_nav">
+                  <li><a href="/index">Home</a></li>
+                  <li id="hidden_item" style="display: inline-block;"><a href="/products">Products</a></li>
+                  <li id="hidden_item" style="display: inline-block;"><a href="/contact">Contact</a></li>
+                  <li class="active"><a href="/user">User</a></li>
+                  <li id="hidden_item" class="dashboard" style="display: none;"><a href="/admin">DashBoard</a></li>
+                </ul>
+                <div class="search_button"><i id="hidden_item" class="fa fa-search" aria-hidden="true" style="display: inline-block;"></i></div>
+
+                <!-- Bonus tag -->
+
+                <div class="shopping_cart">
+                  <a href="/cart"><i id="hidden_item" class="fa fa-shopping-cart" aria-hidden="true" style="display: inline-block;"></i></a>
+                </div>
+                <div class="hamburger menu_mm">
+                  <i class="fa fa-bars menu_mm" aria-hidden="true"></i>
+                </div>
+              </nav>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header Search Panel -->
+    <div class="header_search_container">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="header_search_content d-flex flex-row align-items-center justify-content-end">
+              <form action="#" class="header_search_form">
+                <input type="search" class="search_input" placeholder="Search" required="required">
+                <button class="header_search_button d-flex flex-column align-items-center justify-content-center">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Heading Row -->
+
+
+  <div class="backgr" style="background-image: url(assets/images/back_ground5.jpg);opacity: 0.2;position: absolute;width: 108%;height: 120%;background-size: cover;margin-left: -60px;"></div>
+  <div class="row align-items-center my-5 content">
+    <div class="col-lg-4">
+      <div class="avatar">
+        <img id="imgAvatar" alt="" src="image-1621653485649.jpeg">
+        <input type="file" id="myFileInput">
+        <button class="btn" onclick="document.getElementById('myFileInput').click()">Chỉnh sửa ảnh</button>
+      </div>
+    </div>
+    <div class="col-lg-8" id="profile">
+      <h1 class="font-weight-light">Personal Information</h1>
+      <div class="list_info">
+        <div class="info_item">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <span> First Name: </span>
+          <p id="fn">qn</p>
+        </div>
+        <div class="info_item">
+          <i class="fa fa-user-o" aria-hidden="true"></i>
+          <span> Last Name: </span>
+          <p id="ln">qn</p>
+        </div>
+        <div class="info_item">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <span> Email: </span>
+          <p id="email">tl@gmail.com</p>
+        </div>
+        <div class="info_item">
+          <i class="fa fa-phone-square" aria-hidden="true"></i>
+          <span> Phone Number: </span>
+          <p id="pn">0987654321</p>
+        </div>
+        <div class="info_item">
+          <i class="fa fa-address-book-o" aria-hidden="true"></i>
+          <span> Address: </span>
+          <p id="addr">qưeqwe</p>
+        </div>
+        <div class="info_item">
+          <i class="fa fa-birthday-cake" aria-hidden="true"></i>
+          <span> Date of Birth: </span>
+          <p id="dob">31T17:00:00.000Z/12/2019</p>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary" id="editBtn" style="display: block;">Edit Profile</button>
+      <button type="button" class="btn btn-success" id="saveBtn" style="display: none;">Save</button>
+      <button type="button" class="btn btn-danger" id="cancelBtn" style="display: none;">Cancel</button>
+      <button type="button" class="btn btn-primary" id="changeBtn" style="float: right; margin: -35px 0px 0 0;">Change password</button>
+      <div class="i_modal" id="password_modal">
+        <div class="i_modal_content">
+          <table border="0">
+            <tbody><tr>
+              <th>Your current password</th>
+              <td>
+                <input type="text" class="form-control r-only" id="currentPassword">
+              </td>
+            </tr>
+            <tr>
+              <th>Your new password</th>
+              <td>
+                <input type="text" class="form-control r-only" id="newPassword">
+              </td>
+            </tr>
+            <tr>
+              <th>Your new password again</th>
+              <td>
+                <input type="text" class="form-control r-only" id="reNewPassword">
+              </td>
+            </tr>
+            <tr>
+              <th></th>
+              <td>
+                <button type="button" class="btn btn-success" id="saveChange" style="display: inline-flex;">Save</button>
+                <button type="button" class="btn btn-danger" id="cancelChange" style="display: inline-flex;">Cancel</button>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="footer">
+		<div class="footer_background" style="background-image:url(assets/images/footer_background1.jpg); opacity: 0.4"></div>
+		<div class="container">
+			<div class="row footer_row">
+				<div class="col">
+					<div class="footer_content">
+						<div class="row">
+
+							<div class="col-lg-3 footer_col">
+					
+								<!-- Footer About -->
+								<div class="footer_section footer_about">
+									<div class="footer_logo_container">
+										<a href="#">
+											<div class="footer_logo_text">Nhom<span>22</span></div>
+										</a>
+									</div>
+									<div class="footer_about_text">
+										<p>Lorem ipsum dolor sit ametium, consectetur adipiscing elit.</p>
+									</div>
+									<div class="footer_social">
+										<ul>
+											<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								
+							</div>
+
+							<div class="col-lg-3 footer_col">
+					
+								<!-- Footer Contact -->
+								<div class="footer_section footer_contact">
+									<div class="footer_title">Contact Us</div>
+									<div class="footer_contact_info">
+										<ul>
+											<li>Email: nhom22@gmail.com</li>
+											<li>Phone:  09876543321</li>
+											<li>Bách Khoa Hà Nội</li>
+										</ul>
+									</div>
+								</div>
+								
+							</div>
+
+							<div class="col-lg-3 footer_col">
+					
+								<!-- Footer links -->
+								<div class="footer_section footer_links">
+									<div class="footer_title">Liên hệ chúng tôi</div>
+									<div class="footer_links_container">
+										<ul>
+											<li><a href="/index">Home</a></li>
+											<li><a href="/index">Thông tin</a></li>
+											<li><a href="/index">Liên hệ</a></li>
+											<li><a href="#">Giới thiệu</a></li>
+											<li><a href="/index">Sản phẩm</a></li>
+											<li><a href="#">Sự kiện</a></li>
+											<li><a href="#">Triển lãm</a></li>
+											<li><a href="#">Hỏi đáp</a></li>
+										</ul>
+									</div>
+								</div>
+								
+							</div>
+
+							<div class="col-lg-3 footer_col clearfix">
+					
+								<!-- Footer links -->
+								<div class="footer_section footer_mobile">
+									<div class="footer_title">Trên Di Động</div>
+									<div class="footer_mobile_content">
+										<div class="footer_image"><a href="#"><img src="assets/images/mobile_1.jpg" alt=""></a></div>
+										<div class="footer_image"><a href="#"><img src="assets/images/mobile_2.jpg" alt=""></a></div>
+									</div>
+								</div>
+								
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row copyright_row">
+				<div class="col">
+					<h3 style="color: white">END</h3>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+  <script src="js/jqmin.js"></script>
+  <script src="js/user.js"></script>
+
+
+
+
+
+</body></html>
